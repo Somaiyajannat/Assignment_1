@@ -2,7 +2,7 @@
 {
     public static void Main(string[] args)
     {
-        string a = "MatRix";
+        string a = Console.ReadLine();
         int uc = 0;
         int lc = 0;
 
