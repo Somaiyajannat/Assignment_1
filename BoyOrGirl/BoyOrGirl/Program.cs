@@ -1,6 +1,10 @@
-﻿public class Program
+﻿
+
+using System;
+
+public class Program
 {
-    public  static void Main(string[] args)
+    public static void Main(string[] args)
     {
         char[] array = new char[26];
         string input = "wjmzbmr";
@@ -8,11 +12,15 @@
         for (int i = 0; i < input.Length; i++)
         {
             char c = input[i];
-            Console.WriteLine(array[c]);
-            
-            
+            array[input[i]] = c;
+
+
         }
-        //Console.WriteLine(count);
+        for (int i = 0; i < array.Length; i++)
+        {
+            Console.WriteLine(array[i]);
+        }
+
 
     }
 }
