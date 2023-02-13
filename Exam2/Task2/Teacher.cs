@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Task2
 {
+    public abstract class Teacher
+    {
+        public string GenerateId();
+    }
     public class Teacher
     {
         public string Name { get; set; }

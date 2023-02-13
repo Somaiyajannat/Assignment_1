@@ -6,11 +6,18 @@ using System.Threading.Tasks;
 
 namespace Task1
 {
-    internal class Machine
+    public class Machine
     {
         public void Start()
         {
             Console.WriteLine("Machine Started");
+        }
+    }
+    public class MachineSubClass : Machine
+    {
+        public override void Start()
+        {
+            Console.WriteLine("Machine Started Successfully");
         }
     }
 }
